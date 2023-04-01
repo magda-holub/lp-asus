@@ -69,15 +69,15 @@
 }
 #layout_switch button {
   display: block;
-  color: #fff;
-  background: #ff4757;
-  font-size: 110%;
-  width: 50px;
-  height: 50px;
-  border-radius: 100%;
-  margin-bottom: 10px;
-  border: 2px solid #E23140;
-  box-shadow: 0px 4px 10px 0px rgba(255, 71, 86, 0.6);
+  color: #ffffff;
+  background: #5f5f5f;
+  font-size: 9px;
+  width: 70px;
+  height: 30px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 2px 6px rgba(176, 176, 176, 0.5);
+  margin-bottom: 5px;
   cursor: pointer;
 }
 
@@ -718,6 +718,75 @@
   align-items: flex-start;
 }
 
+@media only screen and (max-width: 1035px) {
+  .mobile #articlePage #landingpage .lp-section__contrast,
+  .mobileapp #articlePage #landingpage .lp-section__contrast {
+    height: 503px;
+  }
+  .mobile #articlePage #landingpage .lp-section__contrast .lp-container__flex,
+  .mobileapp #articlePage #landingpage .lp-section__contrast .lp-container__flex {
+    height: 503px;
+  }
+  .mobile #articlePage #landingpage .lp-section__contrast .img__bgr6,
+  .mobileapp #articlePage #landingpage .lp-section__contrast .img__bgr6 {
+    height: 503px;
+    width: auto;
+  }
+  .mobile #articlePage #landingpage .lp-section__hdr,
+  .mobileapp #articlePage #landingpage .lp-section__hdr {
+    height: 509px;
+  }
+  .mobile #articlePage #landingpage .lp-section__hdr .lp-container__flex,
+  .mobileapp #articlePage #landingpage .lp-section__hdr .lp-container__flex {
+    height: 404px;
+  }
+  .mobile #articlePage #landingpage .lp-section__hdr .hdl2,
+  .mobileapp #articlePage #landingpage .lp-section__hdr .hdl2 {
+    padding: 0 0 48px 0;
+  }
+  .mobile #articlePage #landingpage .lp-section__hdr .img__bgr7,
+  .mobileapp #articlePage #landingpage .lp-section__hdr .img__bgr7 {
+    height: 518px;
+    width: auto;
+  }
+  .mobile #articlePage #landingpage .lp-section__experience,
+  .mobileapp #articlePage #landingpage .lp-section__experience {
+    height: 582px;
+  }
+  .mobile #articlePage #landingpage .lp-section__experience .lp-column__sole,
+  .mobileapp #articlePage #landingpage .lp-section__experience .lp-column__sole {
+    width: 60%;
+  }
+  .mobile #articlePage #landingpage .lp-section__experience .lp-container__flex,
+  .mobileapp #articlePage #landingpage .lp-section__experience .lp-container__flex {
+    height: 552px;
+  }
+  .mobile #articlePage #landingpage .lp-section__experience .img__bgr8,
+  .mobileapp #articlePage #landingpage .lp-section__experience .img__bgr8 {
+    height: 582px;
+    width: auto;
+  }
+  .mobile #articlePage #landingpage .lp-section__truecolor,
+  .mobileapp #articlePage #landingpage .lp-section__truecolor {
+    height: 444px;
+  }
+  .mobile #articlePage #landingpage .lp-section__truecolor .lp-column__sole,
+  .mobileapp #articlePage #landingpage .lp-section__truecolor .lp-column__sole {
+    width: 75%;
+  }
+  .mobile #articlePage #landingpage .lp-section__truecolor .img__truecolor,
+  .mobileapp #articlePage #landingpage .lp-section__truecolor .img__truecolor {
+    display: none;
+  }
+  .mobile #articlePage #landingpage .lp-section__videos .videos--sub,
+  .mobileapp #articlePage #landingpage .lp-section__videos .videos--sub {
+    flex: 1.2 1 0;
+  }
+  .mobile #articlePage #landingpage .lp-section__videos .videos--row,
+  .mobileapp #articlePage #landingpage .lp-section__videos .videos--row {
+    align-items: flex-start;
+  }
+}
 @media only screen and (max-width: 980px) {
   .mobile #articlePage #landingpage .lp-header,
   .mobileapp #articlePage #landingpage .lp-header {
