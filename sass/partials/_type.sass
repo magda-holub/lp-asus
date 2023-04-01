@@ -1,0 +1,54 @@
+@mixin roboto
+    font-family: 'Roboto', sans-serif
+
+@mixin type($size, $height, $weight)
+    font-size: $size
+    line-height: $height
+    font-weight: $weight
+
+#h1c
+    margin: 0
+    padding: 0
+    min-height: 0
+
+#landingpage
+    @include roboto
+    
+    .notMoveH1
+        @include type(40px, 50px, 500)
+        @include roboto
+        color: $c-golden
+
+    .hdl2
+        @include type(40px, 50px, 300)
+        @include roboto
+        color: $c-golden
+        padding-bottom: 72px
+
+    .hdl3
+        @include type(24px, 36px, 500)
+        @include roboto
+
+    .lp-text
+        @include type(14px, 21px, 300)
+        @include roboto
+        color: $c-white
+
+        &__large
+            @include type(40px, 50px, 400)
+            @include roboto
+            font-style: italic
+            color: $c-white
+
+    .lp-annotation
+        @include type(12px, 18px, 300)
+        @include roboto
+        color: $c-white
+
+// MOBILE + APP
+@media only screen and (max-width: 920px)
+    .mobile #articlePage #landingpage,
+    .mobileapp #articlePage #landingpage
+        .notMoveH1, .hdl2, .hdl3, .lp-text, .lp-annotation
+            text-align: center
+

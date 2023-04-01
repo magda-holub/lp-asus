@@ -1,0 +1,29 @@
+@mixin flexHor
+    display: flex
+    flex-direction: row
+
+@mixin flexVert
+    display: flex
+    flex-direction: column
+
+@mixin btnStates($color)
+    &:hover
+        background-color: darken($color, 6%)
+        box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.3)
+
+    &:active
+        background-color: darken($color, 12%)
+        box-shadow: none
+
+    &__disabled
+        background-color: transparentize($color, .5)
+        box-shadow: none
+
+@mixin btnSizing($height, $size)
+    height: $height + px
+    line-height: $height + px
+    font-size: $size + px
+
+@mixin imgRetina($image)
+    @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) 
+        background-image: url($image)

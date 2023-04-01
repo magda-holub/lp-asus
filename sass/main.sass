@@ -1,0 +1,608 @@
+@import ../sass/partials/colors
+@import ../sass/partials/type
+@import ../sass/partials/mixins
+@import ../sass/partials/switcher
+@import ../sass/partials/global
+
+#landingpage
+
+    //header
+    .lp-header
+        background-image: url("https://cdn.alza.cz/Foto/or/articles/36437/img/header_bg.png")
+        @include imgRetina("https://cdn.alza.cz/Foto/or/articles/36437/img/header_bg@2x.png")
+        background-size: cover
+        background-position: center
+        height: 620px
+
+        .img
+            &__asus
+                fill: $c-white
+                height: 20px
+                width: 90px
+
+            &__proart
+                fill: $c-golden
+                height: 30px
+                width: 113px
+                padding-right: 10px
+
+        figure
+            display: inline-block
+
+        .notMoveH1
+            display: inline-block
+            padding-top: 48px
+
+        &--heading, .hdl2
+            margin: auto
+            text-align: center
+
+    //warranty section
+    .lp-section__warranty
+        background-image: url('https://cdn.alza.cz/Foto/or/articles/36437/img/section2_bg.png')
+        @include imgRetina(' https://cdn.alza.cz/Foto/or/articles/36437/img/section2_bg@2x.png')
+        background-size: cover
+
+        .lp-column
+            @include flexVert
+            align-items: center
+
+        .img__warranty
+            padding-top: 48px
+
+        ul
+            color: $c-white
+            padding: 48px 0
+
+    //creators section
+    .lp-section__creators
+        background-color: $c-grey
+
+        .lp-container__flex
+            flex-direction: column
+            gap: 0
+
+        .hdl2
+            text-align: center
+
+        .hdl3
+            color: $c-white
+            padding: 24px
+
+        .lp-text
+            padding: 24px
+        
+        .creators
+            &--wrapper
+                @include flexHor
+                padding-bottom: 48px
+
+            &--column
+                flex: 1 1 0
+
+            &--heading
+                height: 227px
+                @include flexVert
+                justify-content: center
+                align-items: center
+                background-size: cover
+
+            &--stripe
+                height: 20px
+                margin-bottom: 24px
+                @include grad(to right, $c-golden, darken($c-golden, 50%))
+
+        .colorists--heading
+            background-image: url(' https://cdn.alza.cz/Foto/or/articles/36437/img/colorists.png')
+            @include imgRetina(' https://cdn.alza.cz/Foto/or/articles/36437/img/colorists@2x.png')
+
+        .photo--heading
+            background-image: url(' https://cdn.alza.cz/Foto/or/articles/36437/img/cinematographers.png')
+            @include imgRetina(' https://cdn.alza.cz/Foto/or/articles/36437/img/cinematographers@2x.png')
+
+        .cinema--heading
+            background-image: url(' https://cdn.alza.cz/Foto/or/articles/36437/img/photographers.png')
+            @include imgRetina(' https://cdn.alza.cz/Foto/or/articles/36437/img/photographers@2x.png')
+
+        a
+            text-decoration: none
+            color: $c-white
+
+    //visuals section
+    .lp-section__visuals
+        @include grad(to bottom, $c-grey, lighten($c-grey, 12%))
+        padding-top: 24px
+
+        .lp
+            &-column
+                @include flexVert
+                align-items: flex-start
+                gap: 24px
+
+            &-features
+                .hdr
+                    font-size: 30px
+
+                .lp-text
+                    color: $c-golden
+
+                &--divider
+                    height: 45px
+
+        .hdl2
+            padding-bottom: 0
+
+    //contrast section
+    .lp-section__contrast
+        height: 634px
+        position: relative
+        padding: 0
+
+        .img__bgr6
+            position: absolute
+            top: 0
+
+        .hdl2
+            padding: 0
+
+        .lp
+            &-container__flex
+                @include flexHor
+                align-items: center
+                justify-content: flex-end
+                height: 634px
+
+            &-column__sole
+                width: 35%
+                @include flexVert
+                gap: 24px
+                position: relative
+                z-index: 105     
+
+    //hdr section
+    .lp-section__hdr
+        height: 648px
+        position: relative
+        padding: 0
+
+        .hdl2
+            text-align: center
+            padding: 28px 0 0 0
+            position: relative
+            z-index: 105
+
+        .img__bgr7
+            position: absolute
+            bottom: 0
+            right: 0
+
+        .img__dolby
+            margin: 0
+
+        .lp
+            &-container__flex
+                @include flexVert
+                align-items: flex-start
+                justify-content: center
+                height: 466px
+
+            &-column__sole
+                width: 45%
+                @include flexVert
+                gap: 24px
+                position: relative
+                z-index: 105
+
+            &-text--wrapper>p
+                    padding-bottom: 24px
+
+                    &:last-of-type
+                        padding-bottom: 0
+
+    //experience section
+    .lp-section__experience
+        height: 737px
+        position: relative
+        padding: 0
+
+        .hdl2
+            padding-bottom: 0
+
+        .img__bgr8
+            position: absolute
+            top: 0
+            right: 0
+
+        .img__experience
+            position: absolute
+            right: 0
+            top: 72px
+
+        .lp
+            &-container__flex
+                @include flexVert
+                align-items: flex-start
+                justify-content: center
+                position: relative
+                z-index: 105
+                height: 706px
+
+            &-column__sole
+                width: 55%
+                @include flexVert
+                gap: 24px
+
+            &-features--row
+                padding-bottom: 14px
+                
+
+    //truecolor section
+    .lp-section__truecolor
+        background-image: url(' https://cdn.alza.cz/Foto/or/articles/36437/img/section9_bg.png')
+        @include imgRetina(' https://cdn.alza.cz/Foto/or/articles/36437/img/section9_bg@2x.png')
+        background-size: cover
+        height: 570px
+        position: relative
+        @include flexVert
+        justify-content: flex-end
+        padding-bottom: 72px
+
+        .hdl2
+            padding-bottom: 0
+
+        .img
+            
+            &__truecolor
+                position: absolute
+                left: 10%
+                bottom: 0
+
+            &__calman
+                height: auto
+                width: 150px
+
+        .lp
+            &-container__flex
+                align-items: flex-end
+                justify-content: flex-end
+
+            &-column__sole
+                width: 46%
+                @include flexVert
+                align-items: flex-start
+                gap: 24px
+
+    //fidelity section
+    .lp-section__fidelity
+        background-image: url(' https://cdn.alza.cz/Foto/or/articles/36437/img/section10_bg.png')
+        @include imgRetina(' https://cdn.alza.cz/Foto/or/articles/36437/img/section10_bg@2x.png')
+        background-size: cover
+        background-position: center
+        height: 783px
+        text-align: center
+
+        .img__bgr10
+            display: none
+
+        .hdl2
+            color: $c-white
+            padding-bottom: 0
+
+        .lp
+            &-bgrimg
+                background-image: url(' https://cdn.alza.cz/Foto/or/articles/36437/img/section10_product.png')
+                @include imgRetina(' https://cdn.alza.cz/Foto/or/articles/36437/img/section10_product@2x.png')
+                background-repeat: no-repeat
+                background-size: contain
+                height: 720px
+                width: 713px
+                margin: auto
+                padding: 72px 72px 12px 72px
+
+                &>*
+                    padding-bottom: 72px
+
+        a
+            text-decoration: none
+            color: $c-white
+
+    //videos section
+    .lp-section__videos
+        background-image: url(' https://cdn.alza.cz/Foto/or/articles/36437/img/section11_bg.png')
+        @include imgRetina(' https://cdn.alza.cz/Foto/or/articles/36437/img/section11_bg@2x.png')
+        background-size: cover
+
+        .lp-container__flex
+            flex-direction: column
+            gap: 0
+
+        .hdl2
+            text-align: center
+
+        .hdl3
+            color: $c-golden
+
+        .lp-column
+            width: 40%
+
+        .videos
+            &--row
+                @include flexHor
+                align-items: center
+                justify-content: space-between
+                padding-bottom: 72px
+                gap: 24px
+
+            &--heading
+                padding-bottom: 24px
+
+                p
+                    color: $c-golden
+
+                &--sub
+                    max-width: 560px
+
+        a
+            text-decoration: none
+            color: $c-white
+
+// LAYOUT 0
+.layout-0 #articlePage #landingpage
+    .lp-section__contrast
+        height: 503px
+
+        .lp-container__flex
+            height: 503px
+
+        .img__bgr6
+            height: 503px
+            width: auto
+    
+    .lp-section__hdr
+        height: 509px
+
+        .lp-container__flex
+            height: 404px
+
+        .hdl2
+            padding: 0 0 48px 0
+
+        .img__bgr7
+            height: 518px
+            width: auto
+
+    .lp-section__experience
+        height: 582px
+
+        .lp-column__sole
+            width: 60%
+
+        .lp-container__flex
+            height: 552px
+
+        .img__bgr8
+            height: 582px
+            width: auto
+    
+    .lp-section__truecolor
+        height: 444px
+
+        .lp-column__sole
+            width: 75%
+        
+        .img__truecolor
+            display: none
+    
+    .lp-section__videos
+        .videos
+            &--sub
+                flex: 1.2 1 0
+
+            &--row
+                align-items: flex-start
+
+// MOBILE + APP
+@media only screen and (max-width: 980px)
+    .mobile #articlePage #landingpage,
+    .mobileapp #articlePage #landingpage
+        .lp-header
+            background-image: none
+            height: auto
+
+            &--heading
+                padding-top: 72px
+
+        .lp-section__warranty
+            background-image: none
+            @include grad(to bottom, $c-black, lighten($c-grey, 5%))
+            padding-top: 0
+
+            .img__warranty
+                padding-top: 72px
+
+            ul
+                padding-bottom: 0
+    
+        .lp-section__contrast
+            height: auto
+            text-align: center
+
+            .lp-container__flex
+                align-items: center
+                justify-content: center
+                height: auto
+
+            .lp-column__sole
+                align-items: center
+                padding-top: 72px
+                width: 80%
+
+            .img__bgr6
+                position: static
+                padding-top: 6px
+
+        .lp-section__hdr
+            height: auto
+            text-align: center
+
+            .lp-container__flex
+                justify-content: flex-start
+                align-items: center
+                height: auto
+
+            .lp-column__sole
+                align-items: center
+                padding-top: 48px
+                width: 80%
+
+            .lp-annotation
+                padding-bottom: 12px
+
+            .hdl2
+                padding: 48px 24px 0 24px
+
+            .img__bgr7
+                position: static
+                width: 100%
+                height: auto
+                margin-top: -10%
+
+        .lp-section__experience
+            height: auto
+            text-align: center
+
+            .lp-container__flex
+                justify-content: flex-start
+                align-items: center
+                height: auto
+
+            .lp-column__sole
+                align-items: center
+                padding-top: 72px
+                width: 80%
+
+            .img__bgr8
+                width: 100%
+                padding-top: 48px
+                position: static
+
+            .lp-features--row
+                justify-content: center
+                
+        .lp-section__truecolor
+            height: auto
+            text-align: center
+            background: none
+            padding: 24px 0
+
+            .lp-container__flex
+                justify-content: center
+                align-items: center
+                height: auto
+
+            .lp-column__sole
+                align-items: center
+                padding-top: 0
+                width: 80%
+
+            .img__truecolor
+                display: none
+
+            .img__calman
+                order: 1
+
+        .lp-section__fidelity
+            @include grad(to bottom, $c-black, $c-grey)
+            padding-bottom: 0
+            height: auto
+
+            .lp-bgrimg
+                background: none
+                height: auto
+                max-width: 100%
+                padding: 0
+
+            .img__bgr10
+                display: block
+
+            .hdl2
+                color: $c-golden
+
+            a
+                margin: 36px 0 72px 0
+
+        .lp-section__videos
+            padding-top: 72px
+
+            .videos
+                &--row
+                    flex-direction: column
+
+                &--sub
+                    flex: 1.2 1 0
+
+            .lp-column
+                width: 80%
+
+            .sub2
+                order: -1
+
+            .youTubeWrapper
+                position: relative
+                width: 100%
+                padding-bottom: 56.25%
+                height: 0
+
+            iframe
+                position: absolute
+                top: 0
+                left: 0
+                width: 100%
+                height: 100%
+
+@media only screen and (max-width: 920px)
+    .mobile #articlePage #landingpage,
+    .mobileapp #articlePage #landingpage
+        .lp-section__warranty
+            .lp-column:last-of-type
+                order: -1
+
+        .lp-section__creators
+            .creators
+                &--wrapper
+                    flex-direction: column
+                    gap: 72px
+            
+            .lp-text
+                padding: 0
+                width: 80%
+                margin: auto
+
+@media only screen and (max-width: 850px)
+    .mobile #articlePage #landingpage,
+    .mobileapp #articlePage #landingpage
+        .lp-section__truecolor
+            height: auto
+            text-align: center
+            background: none
+
+
+@media only screen and (max-width: 650px)
+    .mobile #articlePage #landingpage,
+    .mobileapp #articlePage #landingpage 
+        .lp-header .notMoveH1
+            padding-top: 24px
+
+        .lp-section__creators
+            .lp-text
+                width: 100%
+
+        .lp-section__fidelity
+            .lp-bgrimg>*
+                padding-bottom: 48px
+
+        .lp-section__contrast, .lp-section__hdr, .lp-section__experience, .lp-section__truecolor
+            .lp-column__sole
+                width: 95%
+        
+        
