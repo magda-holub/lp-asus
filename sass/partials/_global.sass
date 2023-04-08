@@ -41,15 +41,15 @@
 
 //containers
 .lp-container
-    &__12
+    &--12
         padding-left: 65px
         padding-right: 65px
 
-    &__10
+    &--10
         padding-left: 145px
         padding-right: 145px
 
-    &__flex
+    &--flex
         @include flexHor
         align-items: center
         gap: 24px
@@ -60,13 +60,13 @@
 
 //features rows
 .lp-features
-    &--row
+    &__row
         @include flexHor
         align-items: center
         justify-content: flex-start
         gap: 12px
 
-    &--icon
+    &__icon
         @include grad(to top, $c-golden, lighten($c-golden, 20%))
         -webkit-text-fill-color: transparent
         -webkit-background-clip: text
@@ -74,7 +74,7 @@
         font-size: 24px
         font-weight: 700
 
-    &--divider
+    &__divider
         @include grad(to top, $c-golden, lighten($c-golden, 20%))
         width: 2px
         height: 24px
@@ -94,7 +94,7 @@
     box-shadow: 0 1px 4px 0px rgba(0,0,0,0.15)
 
 .btn
-    &__golden
+    &--golden
         @include grad(to bottom, $c-golden, darken($c-golden, 10%))
         color: $c-white
         box-shadow: 0 -1px 1px 0 rgba(0,0,0,0.4) inset
@@ -105,11 +105,11 @@
         &:active
             @include grad(to bottom, darken($c-golden, 20%), darken($c-golden, 30%))
     
-    &__normal
-        &__fixed
+    &--normal
+        &--fixed
             @include btnSizing(42, 14)
             padding: 0 25px
-        &__full
+        &--full
             @include btnSizing(42, 14)
             width: 166px
 
@@ -145,18 +145,18 @@
     .mobile #articlePage #landingpage,
     .mobileapp #articlePage #landingpage
         .lp-container
-            &__flex
+            &--flex
                 flex-direction: column
 
-        .lp-column, .lp-column__sole
+        .lp-column, .lp-column--sole
             align-items: center
             gap: 48px
 
-            &__sole
+            &--sole
                 align-items: center
 
         .lp-features
-            &--row
+            &__row
                 justify-content: center
 
         .lpFooter
@@ -166,7 +166,7 @@
     .mobile #articlePage #landingpage,
     .mobileapp #articlePage #landingpage
         .lp-container
-            &__10
+            &--10
                 padding-left: 65px
                 padding-right: 65px
 
@@ -174,9 +174,9 @@
     .mobile #articlePage #landingpage,
     .mobileapp #articlePage #landingpage
         .lp-container
-            &__10, &__12
+            &--10, &--12
                 padding-left: 24px
                 padding-right: 24px
 
-        .lp-features--icon
+        .lp-features__icon
             font-size: 18px
