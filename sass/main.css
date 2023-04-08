@@ -62,31 +62,49 @@
   }
 }
 #layout_switch {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
   position: fixed;
-  left: 25px;
+  left: 20px;
   top: 20px;
   z-index: 100;
+  width: 180px;
+  height: 70px;
+  background: white;
+  box-shadow: 0px 2px 4px 0px rgba(128, 128, 128, 0.3);
+  border-radius: 5px;
 }
 #layout_switch button {
-  display: block;
-  color: #ffffff;
-  background: #5f5f5f;
-  font-size: 9px;
-  width: 70px;
-  height: 30px;
-  border-radius: 10px;
-  border: none;
-  box-shadow: 0 2px 6px rgba(176, 176, 176, 0.5);
-  margin-bottom: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  box-shadow: 0px 2px 4px 0px rgba(128, 128, 128, 0.5);
+  border-radius: 5px;
+  width: 45px;
+  height: 45px;
+  margin: 5px;
   cursor: pointer;
+  border: none;
+}
+#layout_switch button .icon {
+  width: 30px;
+  height: 30px;
+  fill: #737373;
+}
+#layout_switch button.active {
+  box-shadow: inset 0px 2px 4px 0px rgba(128, 128, 128, 0.7);
 }
 
-#articlePage #landingpage {
+#landingpage {
   max-width: 1310px;
   margin: 0 auto;
   display: block;
   position: relative;
-  background: black;
+  background: #FFFFFF;
   font-size: 16px;
   padding: 0;
   box-sizing: border-box;
@@ -305,7 +323,7 @@
   background-position: center;
   height: 620px;
 }
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   #landingpage .lp-header {
     background-image: url("https://cdn.alza.cz/Foto/or/articles/36437/img/header_bg@2x.png");
   }
@@ -336,7 +354,7 @@
   background-image: url("https://cdn.alza.cz/Foto/or/articles/36437/img/section2_bg.png");
   background-size: cover;
 }
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   #landingpage .lp-section__warranty {
     background-image: url(" https://cdn.alza.cz/Foto/or/articles/36437/img/section2_bg@2x.png");
   }
@@ -394,7 +412,7 @@
 #landingpage .lp-section__creators .colorists--heading {
   background-image: url(" https://cdn.alza.cz/Foto/or/articles/36437/img/colorists.png");
 }
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   #landingpage .lp-section__creators .colorists--heading {
     background-image: url(" https://cdn.alza.cz/Foto/or/articles/36437/img/colorists@2x.png");
   }
@@ -402,7 +420,7 @@
 #landingpage .lp-section__creators .photo--heading {
   background-image: url(" https://cdn.alza.cz/Foto/or/articles/36437/img/cinematographers.png");
 }
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   #landingpage .lp-section__creators .photo--heading {
     background-image: url(" https://cdn.alza.cz/Foto/or/articles/36437/img/cinematographers@2x.png");
   }
@@ -410,7 +428,7 @@
 #landingpage .lp-section__creators .cinema--heading {
   background-image: url(" https://cdn.alza.cz/Foto/or/articles/36437/img/photographers.png");
 }
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   #landingpage .lp-section__creators .cinema--heading {
     background-image: url(" https://cdn.alza.cz/Foto/or/articles/36437/img/photographers@2x.png");
   }
@@ -554,7 +572,7 @@
   justify-content: flex-end;
   padding-bottom: 72px;
 }
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   #landingpage .lp-section__truecolor {
     background-image: url(" https://cdn.alza.cz/Foto/or/articles/36437/img/section9_bg@2x.png");
   }
@@ -589,7 +607,7 @@
   height: 783px;
   text-align: center;
 }
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   #landingpage .lp-section__fidelity {
     background-image: url(" https://cdn.alza.cz/Foto/or/articles/36437/img/section10_bg@2x.png");
   }
@@ -610,7 +628,7 @@
   margin: auto;
   padding: 72px 72px 12px 72px;
 }
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   #landingpage .lp-section__fidelity .lp-bgrimg {
     background-image: url(" https://cdn.alza.cz/Foto/or/articles/36437/img/section10_product@2x.png");
   }
@@ -626,7 +644,7 @@
   background-image: url(" https://cdn.alza.cz/Foto/or/articles/36437/img/section11_bg.png");
   background-size: cover;
 }
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   #landingpage .lp-section__videos {
     background-image: url(" https://cdn.alza.cz/Foto/or/articles/36437/img/section11_bg@2x.png");
   }
