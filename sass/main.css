@@ -317,6 +317,9 @@
     font-size: 18px;
   }
 }
+#landingpage {
+  background-color: #000000;
+}
 #landingpage .lp-header {
   background-image: url("https://cdn.alza.cz/Foto/or/articles/36437/img/header_bg.png");
   background-size: cover;
